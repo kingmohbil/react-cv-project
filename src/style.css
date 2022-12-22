@@ -4,7 +4,7 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,
     'Times New Roman', Times, serif;
 }
-#root {
+.App {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 64px 0px;
@@ -23,7 +23,15 @@
 .mb-3 {
   margin-bottom: 0 !important;
 }
-.black-box {
+.name-box {
   height: 100px;
   background-color: black;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  color: white;
+  padding: 0px 24px;
+}
+#react-card {
+  border-radius: 0px;
 }
