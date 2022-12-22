@@ -13,6 +13,7 @@ class PracticalExperience extends React.Component {
             type="text"
             className="form-control"
             placeholder="Company Name"
+            onChange={this.props.onCompanyChange}
           />
         </div>
         <div className="mb-3">
@@ -20,19 +21,27 @@ class PracticalExperience extends React.Component {
             type="text"
             className="form-control"
             placeholder="Position title"
+            onChange={this.props.onPositionChange}
           />
         </div>
         <div className="mb-3">
           <label htmlFor="from">From</label>
-          <input type="date" className="form-control" id="from" />
+          <input
+            type="date"
+            className="form-control"
+            id="from"
+            onChange={this.props.onFromChange}
+          />
         </div>
         <div className="mb-3">
           <label htmlFor="to">To</label>
-          <input type="date" className="form-control" id="to" />
+          <input
+            type="date"
+            className="form-control"
+            id="to"
+            onChange={this.props.onToChange}
+          />
         </div>
-        <button type="button" className="btn btn-primary">
-          Edit
-        </button>
         <button type="button" className="btn btn-dark">
           Add
         </button>

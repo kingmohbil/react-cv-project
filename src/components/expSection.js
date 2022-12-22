@@ -13,25 +13,17 @@ class ExperienceSection extends React.Component {
             type="text"
             className="form-control"
             placeholder="University Name"
+            onChange={this.props.onUniversityChange}
           />
         </div>
         <div className="mb-3">
           <input
             type="text"
             className="form-control"
-            placeholder="Title of study"
+            placeholder="Date of study"
+            onChange={this.props.onDateofStudyChange}
           />
         </div>
-        <div className="mb-3">
-          <input
-            type="text"
-            className="form-control"
-            placeholder="Title of study"
-          />
-        </div>
-        <button type="button" className="btn btn-primary">
-          Edit
-        </button>
         <button type="button" className="btn btn-dark">
           Add
         </button>
